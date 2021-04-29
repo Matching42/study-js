@@ -11,3 +11,4 @@ Web Speech API를 이용해 음성을 텍스트로 변환해주는 간단한 프
 - [Mozilla Web API - SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition)
 - [자바스크립트 클립보드 복사 구현하기](https://velog.io/@godori/js-clipboard-copy)
 - [CSS 그라데이션 생성기](https://mybrandnewlogo.com/ko/color-gradient-generator)
+- [음성인식 API(Web Speech API) - 나만의 시리를 만들 수 있을까?](https://usecode.pw/%EC%9D%8C%EC%84%B1%EC%9D%B8%EC%8B%9D-api-web-speech-api-%EB%82%98%EB%A7%8C%EC%9D%98-%EC%8B%9C%EB%A6%AC%EB%A5%BC-%EB%A7%8C%EB%93%A4-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C/)
