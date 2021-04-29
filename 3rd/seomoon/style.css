@@ -1,0 +1,115 @@
+/* layout */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    background-image: linear-gradient(140deg, #f9ceff 0, #e4baff 25%, #cca5f1 50%, #b391e3 75%, #9c7fd7 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result {
+    background-image: linear-gradient(115deg, #d6d888 0, #cadb8c 3.85%, #bede91 7.69%, #b2e198 11.54%, #a5e3a1 15.38%, #98e5aa 19.23%, #8ae6b4 23.08%, #7de7bf 26.92%, #6fe8ca 30.77%, #62e9d5 34.62%, #55e9e0 38.46%, #49e9eb 42.31%, #41e8f5 46.15%, #3fe7ff 50%, #43e6ff 53.85%, #4ee4ff 57.69%, #5ce2ff 61.54%, #6ddfff 65.38%, #7eddff 69.23%, #90daff 73.08%, #a2d6ff 76.92%, #b3d2ff 80.77%, #c3cfff 84.62%, #d3cbff 88.46%, #e2c7ff 92.31%, #efc3ff 96.15%, #fbbfff 100%);
+}
+
+/* button */
+
+button.listen {
+    background: darkturquoise;
+    border: none;
+    border-radius: 50px;
+    width: 350px;
+    height: 100px;
+    color: #fff;
+    font-size: 2.0em;
+    font-weight: bold;
+}
+
+button.listening {
+    color:darkturquoise;
+    box-shadow: 1px 1px 10px ivory;
+    background:#fff;
+}
+
+button.hidden {
+    display: none;
+    transition: 0.5s;
+}
+
+button.listen:hover {
+    color:darkturquoise;
+    box-shadow: 1px 1px 10px ivory;
+    background:#fff;
+}
+
+/* result */
+input {
+    display: none;
+    color: rgb(74, 85, 95);
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+input.show {
+    display: inline-block;
+    background: none;
+    border: none;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* copy */
+.copy {
+    border: none;
+    color: ivory;
+    background:none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.copy:hover {
+    color:darkgray;
+}
+
+/* error */
+.error {
+    display: none;
+    color:salmon;
+    font-size: 4.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 100px;
+}
+
+/* return */
+.return {
+    display: none;
+    border: none;
+    color: ivory;
+    background:none;
+    cursor: pointer;
+}
+
+.return:hover {
+    color:mediumpurple;
+}
+
+.bttns {
+    display: none;
+}
+
+.bttns.show {
+    display: inline-block;
+}
