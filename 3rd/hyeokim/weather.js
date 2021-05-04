@@ -1,14 +1,8 @@
 import {MAPS_API_KEY, GEO_API_KEY} from "./secret.js";
 
 const MY_COORDS = "my_coords";
-const SEOUL = "seoul";
-const BUSAN = "busan";
-const DAEGU = "daegu";
-const GWANGJU = "gwangju";
-const DAEJEON = "daejeon";
-const CITIES = {SEOUL, BUSAN, DAEGU, GWANGJU, DAEJEON};
-const weather = document.querySelector(".js-weather");
 const resetBtn = document.querySelector(".coord-reset__btn");
+const choiceBtnItems = document.querySelectorAll(".choice__btn");
 
 function putWeatherText(json){
 	const temperature = json.main.temp_max;
@@ -32,15 +26,6 @@ function getMyWeather(lat, lng) {
 		`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${GEO_API_KEY}&units=metric`
 	).then(response => response.json())
 	.then(json => putWeatherText(json));
-}
-
-function getCityWeather() {
-	for (const CITY in CITIES) {
-		fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${GEO_API_KEY}&units=metric`
-		).then(response => response.json())
-		.then(json => console.log(json));
-	}
 }
 
 function saveCoords(coordsObj) {
@@ -81,9 +66,23 @@ function loadCoords() {
 	}
 }
 
+function changeText(event) {
+	const CITY = event.toElement.id
+	if (CITY === 'my-town') {
+		loadCoords()
+	} else {
+	fetch(
+		`https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${GEO_API_KEY}&units=metric`
+	).then(response => response.json())
+	.then(json => putWeatherText(json));
+	}
+}
+
 function init() {
-	getCityWeather()
 	resetBtn.addEventListener("click", deleteCoords);
+	choiceBtnItems.forEach(function(choiceBtn) {
+		choiceBtn.addEventListener("click", changeText);
+	})
 	loadCoords();
 }
 
