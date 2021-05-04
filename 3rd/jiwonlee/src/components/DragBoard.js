@@ -15,14 +15,7 @@ export default class DragBoard {
   onDragStart = (event) => {
     this.state.currentColor = event.currentTarget.innerHTML;
 
-    if (event.currentTarget.innerHTML === 'LightBlue')
-      event.currentTarget.style.backgroundColor = 'LightBlue';
-    else if (event.currentTarget.innerHTML === 'LightSalmon')
-      event.currentTarget.style.backgroundColor = 'LightSalmon';
-    else if (event.currentTarget.innerHTML === 'LightPink')
-      event.currentTarget.style.backgroundColor = 'LightPink';
-    else if (event.currentTarget.innerHTML === 'LightGray')
-      event.currentTarget.style.backgroundColor = 'LightGray';
+    event.currentTarget.style.backgroundColor = this.state.currentColor;
   };
 
   onDragOver = (event) => {
@@ -30,14 +23,7 @@ export default class DragBoard {
   };
 
   onDrop = (event) => {
-    if (this.state.currentColor === 'LightBlue')
-      event.currentTarget.style.backgroundColor = 'LightBlue';
-    else if (this.state.currentColor === 'LightSalmon')
-      event.currentTarget.style.backgroundColor = 'LightSalmon';
-    else if (this.state.currentColor === 'LightPink')
-      event.currentTarget.style.backgroundColor = 'LightPink';
-    else if (this.state.currentColor === 'LightGray')
-      event.currentTarget.style.backgroundColor = 'LightGray';
+    event.currentTarget.style.backgroundColor = this.state.currentColor;
 
     event.stopPropagation();
   };
