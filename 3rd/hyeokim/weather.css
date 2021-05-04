@@ -57,7 +57,7 @@
 	justify-content: space-between;
 }
 
-.choice div{
+.choice__btn{
 	height : 60px;
 	width : 100px;
 	font-size : 24px;
