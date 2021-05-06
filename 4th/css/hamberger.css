@@ -7,8 +7,7 @@
   padding-right: 10px;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
-  border: 1px solid #222;
+  border-radius: 3px;
   background-color: #333;
   transition: all 0.4s;
 }
