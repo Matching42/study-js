@@ -1,0 +1,41 @@
+#rate {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;;
+    border: 3px solid rgba(88, 88, 88, 0.418);
+  }
+
+  #rate img {
+    float: left;
+    filter: invert(86%)  saturate(865%) ;
+    padding: 2%;
+    transition: all 0.5s;
+  }
+
+  #rate .hidden {
+    display: none;
+  }
+
+  #rate img.verybad{
+    filter: invert(68%) sepia(41%) saturate(6175%) hue-rotate(321deg);
+  }
+
+  #rate img.bad{
+    filter: invert(65%) sepia(47%) saturate(2929%) hue-rotate(321deg);
+  }
+
+  #rate img.soso{
+    filter: invert(74%) sepia(17%) saturate(1548%) hue-rotate(334deg);
+  }
+ 
+  #rate img.good{
+    filter: invert(90%) sepia(27%) saturate(926%) hue-rotate(335deg);
+  }
+
+  #rate img.verygood{
+    filter: invert(90%) sepia(27%) saturate(826%) hue-rotate(349deg) ; 
+}
