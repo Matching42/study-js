@@ -26,6 +26,7 @@
 
 .hamberger-item {
   position: relative;
+  cursor: pointer;
   width: 40px;
   height: 30px;
 }
