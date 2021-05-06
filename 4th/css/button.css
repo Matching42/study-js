@@ -1,0 +1,11 @@
+.custom-btn {
+	padding: 10px;
+	width: 100px;
+	cursor: pointer;
+	color: white;
+	background-color: skyblue;
+}
+
+.custom-btn:hover {
+	background-color: blue;
+}
