@@ -60,4 +60,5 @@ const modal = (function () {
     }
     closeModalBttn.addEventListener('click', closeModal);
     modalBackground.addEventListener('click', closeModal);
+    hihiModalBttn.addEventListener('click', closeModal);
 }());
