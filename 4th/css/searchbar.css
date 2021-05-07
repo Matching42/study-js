@@ -7,12 +7,8 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-body{
-	background: #e0dbef;
-}
-
 .wrapper{
-	width: 85vw;
+	width: 80%;
 	min-height: 50px;
 	display: flex;
 	justify-content: left;
@@ -20,10 +16,10 @@ body{
 }
 
 .search_bar{
-	background: #643fef;
+	background: #27BABB;
   width: 100%;
 	position: relative;
-	padding: 7px;
+	padding: 8px;
 	border-radius: 6px;
 	display: flex;
   justify-content: space-be;
@@ -33,7 +29,7 @@ body{
 	width: 40px;
 	height: 40px;
 	border-radius: 6px;
-	background: #7a5cf0;
+	background: rgba(0, 0, 0, 0.2);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,7 +41,7 @@ body{
 .search_bar .input_search{
 	outline: none;
 	border: 0;
-	background: #7a5cf0;
+	background: rgba(0, 0, 0, 0.2);
 	border-radius: 6px;
 	padding: 15px 20px;
 	width: 100%;

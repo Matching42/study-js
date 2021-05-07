@@ -1,15 +1,16 @@
 
 #pagination {
-	  width: calc(100% - 100px);
-	  height: 80vh;
+	  width: calc(100% - 200px);
+	  height: 75vh;
+	  overflow: auto;
 	  display: block;
 	  margin: 0;
 	  position: absolute;
 	  /* bottom: 10px; */
-	  left: 80px;
-	  background-color: whitesmoke;
-	  padding: 20px;
-    top: 15vh;
+    	top: 15vh;
+	  right: 80px;
+	  background-color: #fff;
+	  border-radius: 15px;
 	}
 
 	.pagination .tableList {
@@ -17,11 +18,13 @@
 		text-indent: 20px;
 	}
 	.tableList .objectBlock {
+		display: flex;
+		justify-content: space-between;
 		position: relative;
-		background-color: black;
 		color: white;
 		padding: 30px;
 		margin-bottom: 10px;
+		border-bottom: 1px solid #F9F9F9;
 	}
 	.pageButton {
 		border: 1px solid Lightgray ;
@@ -38,8 +41,9 @@
 	.pagination-block {
 	  text-align: center;
 	  width: 100%;
-		position: absolute;
-		bottom: 30px;
+		position: relative;
+		top: 20px;
+		margin-bottom: 50px;
 	}
 	.pagination-block span {
 	  border-radius: 10%;
