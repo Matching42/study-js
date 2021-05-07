@@ -1,0 +1,60 @@
+
+#pagination {
+	  max-width: 400px;
+	  min-width: 300px;
+	  width: 100%;
+	  display: block;
+	  margin: 0 auto;
+	  position: relative;
+	  background-color: whitesmoke;
+	  padding: 20px;
+	}
+
+	.pagination .tableList {
+		min-height: 250px;
+		text-indent: 20px;
+	}
+	.tableList .objectBlock {
+		position: relative;
+		background-color: black;
+		color: white;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.pageButton {
+		border: 1px solid Lightgray ;
+		padding: 5px;
+	}
+	.clickPageNumber {
+		background-color: white;
+		padding: 5px;
+		margin-left: 2px;
+		margin-right: 2px;
+		border:2px solid Lightgray ;
+		color: #0077ff		;
+	}
+	.pagination-block {
+	  text-align: center;
+	  width: 100%;
+
+	}
+	.pagination-block span {
+	  border-radius: 10%;
+	  display: inline-block;
+	}
+	.pagination-block .pageButton {
+	  border-radius: 10%;
+	  background-color: white;
+	  color:#0077ff	  ;
+	}
+	.pagination-block span:hover {
+	  cursor: pointer;
+	}
+	.opacity {
+	  opacity: 0.5;
+	}
+	.outline-none {
+	  outline: none;
+	  user-select: none;
+	}
+
