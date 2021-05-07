@@ -22,8 +22,8 @@
   }
 
   .modalBox {
-    border: 1px solid grey;
-    border-radius: 3px;
+    border: 2px solid #d5d5d5;
+    border-radius: 15px;
     background: #fff;
     width: 300px;
     height: 300px;
@@ -36,8 +36,13 @@
 
   .closeModalBttn {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #d5d5d5;
   }
 
   .modal.hidden {

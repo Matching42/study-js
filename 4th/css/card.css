@@ -1,8 +1,7 @@
 #card {
 	display: inline-block;
-	width: 60%;
-	height: 100px;
-	margin: 5px;
+	width: 75%;
+	height: 100%;
 }
 
 #card:hover {
@@ -11,8 +10,13 @@
 
 .imgCutter {
 	width: 100%;
-	height: 100%;
+	height: 100px;
 	overflow: hidden;
+	border: 2px solid #27babb;
+}
+
+.imgCutter img {
+	width: 100%;
 }
 
 /* .card-img {
@@ -26,6 +30,8 @@
 .card-text {
 	text-align: center;
 	padding: 10px;
+	margin-top: -2px;
+	color: #000;
 	/* box-sizing: border-box; */
-	border: 2px solid gray;
+	border: 2px solid #27babb;
 }

@@ -109,7 +109,7 @@ pagination = (function() {
               listingTable.innerHTML += `
 							<div class='objectBlock'>
 							<section id="card" url="http://placeimg.com/500/250/any">안녕하세요</section>
-							<button class="custom-btn" shape="round">hihi</button>
+							<button class="custom-btn">hihi</button>
 							</div>
 							`;
           }
