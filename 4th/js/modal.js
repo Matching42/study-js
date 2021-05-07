@@ -4,7 +4,7 @@ const modal = (function () {
 
     const openModalBttn = document.querySelectorAll(".custom-btn");
     console.log(openModalBttn)
-  
+
 
     const modalFrame = document.createElement('div');
     modalFrame.className = 'modal';
@@ -16,6 +16,16 @@ const modal = (function () {
     const modalBox = document.createElement('div');
     modalBox.className = 'modalBox';
 
+    const hihiModalBttn = document.createElement('button');
+    hihiModalBttn.className = 'custom-btn';
+    hihiModalBttn.innerHTML = 'HIHI';
+
+    const rate_section = document.createElement('section');
+    rate_section.setAttribute("id","rate")
+
+    // <section id="rate"></section>
+
+
     const modalTitle = document.createElement('h1');
     modalTitle.className = 'modalTitle';
     modalTitle.innerHTML = 'My Modal';
@@ -26,12 +36,15 @@ const modal = (function () {
 
     /* append */
     modalFrame.appendChild(modalBackground);
-    modalFrame.appendChild(modalBox);
     modalBox.appendChild(modalTitle);
     modalBox.appendChild(closeModalBttn);
+    modalBox.appendChild(rate_section);
+    modalBox.appendChild(hihiModalBttn);
 
-   // modal.appendChild(openModalBttn);
+    // modal.appendChild(openModalBttn);
     modal.appendChild(modalFrame);
+
+    modalFrame.appendChild(modalBox);
 
     /* event handling */
     const openModal = () => {

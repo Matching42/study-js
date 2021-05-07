@@ -59,9 +59,9 @@ starRate = (function () {
     var input = make_input(body);
     for (var i = 0; i < 5; i++)
         imgsrc.push(`./img/i${i}.png`);
-        
+
     for (var i = 0; i < 5; i++) {
-        img.push(make_img(body, imgsrc[2], body.offsetHeight / 2, i));
+        img.push(make_img(body, imgsrc[2], 30, i));
 
         img[i].addEventListener('click',
             (e) => {
@@ -74,5 +74,6 @@ starRate = (function () {
         img[i].ondragstart = () => { return false; };
         img[i].addEventListener("mouseenter", (e) => change_imgs(imgsrc, tag, img, e.target.id));
         img[i].addEventListener("mouseleave", (e) => change_imgs(imgsrc, tag, img, current));
+
     }
 }());
