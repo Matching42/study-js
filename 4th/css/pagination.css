@@ -1,11 +1,12 @@
 
 #pagination {
-	  max-width: 400px;
-	  min-width: 300px;
-	  width: 100%;
+	  width: calc(100% - 100px);
+	  height: 95vh;
 	  display: block;
-	  margin: 0 auto;
-	  position: relative;
+	  margin: 0;
+	  position: absolute;
+	  top: 10px;
+	  left: 80px;
 	  background-color: whitesmoke;
 	  padding: 20px;
 	}

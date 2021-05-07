@@ -1,8 +1,12 @@
 #hamberger {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 170px;
-  height: 400px;
+  height: 95vh;
+  margin: 0;
   margin-top: 10px;
-  margin-left: -120px;
+  margin-left: -110px;
   padding-top: 10px;
   padding-right: 10px;
   display: flex;
@@ -11,10 +15,11 @@
   border-bottom-right-radius: 4px;
   background-color: #333;
   transition: all 0.4s;
+  z-index: 8;
 }
 
 #hamberger.active {
-  transform: translateX(120px);
+  transform: translateX(110px);
 }
 
 .hamberger-item,
