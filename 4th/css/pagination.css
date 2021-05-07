@@ -20,7 +20,7 @@
 		position: relative;
 		background-color: black;
 		color: white;
-		padding: 10px;
+		padding: 30px;
 		margin-bottom: 10px;
 	}
 	.pageButton {
@@ -38,7 +38,8 @@
 	.pagination-block {
 	  text-align: center;
 	  width: 100%;
-
+		position: absolute;
+		bottom: 30px;
 	}
 	.pagination-block span {
 	  border-radius: 10%;

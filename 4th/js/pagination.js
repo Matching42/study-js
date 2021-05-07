@@ -57,7 +57,7 @@ pagination = (function() {
       const clickPageNumber = document.querySelectorAll('.clickPageNumber');
 
       let current_page = 1;
-      let records_per_page = 5;
+      let records_per_page = 4;
 
       this.init = function() {
           changePage(1);
@@ -106,7 +106,12 @@ pagination = (function() {
           listingTable.innerHTML = "";
 
           for(var i = (page -1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
-              listingTable.innerHTML += "<div class='objectBlock'>" + objJson[i].adName + "</div>";
+              listingTable.innerHTML += `
+							<div class='objectBlock'>
+							<section id="card" url="http://placeimg.com/500/250/any">안녕하세요</section>
+							<button class="custom-btn" shape="round">hihi</button>
+							</div>
+							`;
           }
           checkButtonOpacity();
           selectedPage();

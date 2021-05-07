@@ -8,11 +8,15 @@ card = (function () {
 		const innerHTML = x.innerHTML;
 		x.innerText = null;
 
+		const imgWrapper = document.createElement("div");
 		const cardImg = document.createElement("img");
+		imgWrapper.className = "imgCutter";
+
 		if (cardImg !== undefined) {
 			cardImg.className = "card-img";
 			cardImg.src = url;
-			x.append(cardImg);
+			imgWrapper.append(cardImg);
+			x.append(imgWrapper);
 		}
 
 		const cardText = document.createElement("div");
