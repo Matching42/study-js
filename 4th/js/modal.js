@@ -2,9 +2,9 @@ const modal = (function () {
     /* create Elements */
     const modal = document.querySelector('#modal');
 
-    const openModalBttn = document.createElement('button');
-    openModalBttn.classList = 'openModalBttn';
-    openModalBttn.innerHTML = 'Open Modal';
+    const openModalBttn = document.querySelectorAll(".custom-btn");
+    console.log(openModalBttn)
+  
 
     const modalFrame = document.createElement('div');
     modalFrame.className = 'modal';
@@ -30,7 +30,7 @@ const modal = (function () {
     modalBox.appendChild(modalTitle);
     modalBox.appendChild(closeModalBttn);
 
-    modal.appendChild(openModalBttn);
+   // modal.appendChild(openModalBttn);
     modal.appendChild(modalFrame);
 
     /* event handling */
@@ -41,8 +41,10 @@ const modal = (function () {
     const closeModal = () => {
         modalFrame.classList.add('hidden');
     }
-
-    openModalBttn.addEventListener('click', openModal);
+    for(var i = 0; i < openModalBttn.length; i++)
+    {
+    openModalBttn[i].addEventListener('click', openModal);
+    }
     closeModalBttn.addEventListener('click', closeModal);
     modalBackground.addEventListener('click', closeModal);
 }());
