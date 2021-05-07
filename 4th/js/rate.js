@@ -59,6 +59,7 @@ starRate = (function () {
     var input = make_input(body);
     for (var i = 0; i < 5; i++)
         imgsrc.push(`./img/i${i}.png`);
+        
     for (var i = 0; i < 5; i++) {
         img.push(make_img(body, imgsrc[2], body.offsetHeight / 2, i));
 
@@ -66,6 +67,8 @@ starRate = (function () {
             (e) => {
                 current = e.target.id;
                 input.setAttribute("value", `${parseInt(e.target.id) + 1}`);
+                for (var j = 0; j <= e.target.id; j++)
+                    set_anim(img[j])
                 change_imgs(imgsrc, tag, img, e.target.id);
             });
         img[i].ondragstart = () => { return false; };
