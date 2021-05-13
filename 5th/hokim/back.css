@@ -1,0 +1,72 @@
+.hidden
+{
+    display: none;
+
+}
+div
+{
+    margin: auto;
+    position: relative;
+    align-items: center;
+    align-self: auto;
+    align-content: center;
+    height: 100%;
+    width: 470px;
+    min-height: 300px;
+}
+
+div.buttons
+{
+
+  justify-content: center;
+  align-items: center;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    align-self: auto;
+    align-content: center;
+    min-height: 10px;
+    width: 570px;
+}
+
+.card
+{
+    border: solid rgb(159, 157, 157) 2px; 
+    border-radius: 10px;
+    padding: 10px; 
+}
+
+button
+{
+    margin: 0px auto;
+    margin-bottom: 10px;
+	width:110px;
+	height: 40px;
+	color:#fff;
+	background: #365cb0;
+	font-size: 16px;
+	border:none;
+    border-radius: 10px;
+    position: relative;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input
+{
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+p.center{
+    position: relative;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    }
+p{
+    margin: 1%;
+}
