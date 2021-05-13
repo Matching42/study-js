@@ -23,7 +23,7 @@ function check_password(pass, realpass) {
 
 function check_balance(balance, value) {
     if (parseInt(balance) < parseInt(value)) {
-        console.log(`you have bank balance${balance} is not enough.${value}`);
+        console.log(`you have bank balance is not enough.`);
         return 0;
     }
     return 1;
