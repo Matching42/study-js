@@ -30,7 +30,7 @@ function person(name, money, tag){
   return this
 }
 
-var bank = new bankSafe()
+var bank = bankSafe()
 var person1 = new person("김춘식", 0.3, 0);
 var person2 = new person("오상석", 0.5, 0);
 var person3 = new person("곽두팔", 0, 0);

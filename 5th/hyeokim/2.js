@@ -14,8 +14,8 @@ function bank(money) {
   }
 }
 
-person1 = bank(1000);
-person2 = bank(5000);
+var person1 = bank(1000);
+var person2 = bank(5000);
 person1.asset();
 person2.asset();
 person1.withdraw(100);
