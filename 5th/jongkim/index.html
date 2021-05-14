@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		debugger ;
+		var Cabinet = ["gun", "phone", "ipad", "macbook", "24k황소"];
+
+		let count = (function() {
+			let i = 0;
+			return function() {
+				setTimeout(
+					console.log(Cabinet[i])
+				, 100);
+				return ++i;
+			};
+		}());
+
+		count();
+		count();
+		count();
+		count();
+		count();
+	</script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		debugger ;
+		var i;
+		var Cabinet = ["gun", "phone", "ipad", "macbook", "24k황소"];
+
+		for (i = 0; i < 10; i++) {
+			(function(j) {
+				setTimeout(function() {
+					console.log(Cabinet[j]);
+				}, 100);
+			}(i));
+		}
+	</script>
+</body>
+</html> -->
