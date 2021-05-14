@@ -1,6 +1,6 @@
-function numberBaseball() {
+var num = [7,4,2]
+function numberBaseball(num) {
 	//여기에 작성하세요
-	var num = [7,4,2]
 
 	function game(list) {
 		var strike = 0;
@@ -11,10 +11,8 @@ function numberBaseball() {
 			if (list[i] === num[i]){
 				strike++;
 			}
-			else{
-				if (num.includes(list[i])){
+			else if (num.includes(list[i])){
 					ball++;
-				}
 			}
 		}
 		if (strike === 0 && ball ===0){
@@ -27,12 +25,11 @@ function numberBaseball() {
 			res += " \n WIN!!";
 		}
 		return res;
-
-	}
+	}(num);
 	return game;
   }
 
-  var baseballGame = numberBaseball();
+  var baseballGame = numberBaseball(num);
 
 
   // ex : 생성된 랜덤 숫자는 7 4 2
