@@ -13,13 +13,18 @@
 
       const increase = () => {
         let count = 0;
-        return function (){ return ++count; };
+        function upup() {
+          return ++count;
+        }
+        console.log(count); // 여기서의 count 는 그대로 0
+        return upup;
       };
-
       let increaseFn = increase();
+      let a1 = increase();
       console.log(increaseFn());
       console.log(increaseFn());
       console.log(increaseFn());
+      console.log(a1()); // 변수 count 를 복사해서 쓰는 개념?
 
       btn.addEventListener('click', increaseFn);
   </script>
