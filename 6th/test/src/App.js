@@ -1,4 +1,9 @@
-class App {
+import ImageInfo from "./components/ImageInfo.js";
+import SearchInput from "./components/SearchInput.js";
+import SearchResult from "./components/SearchResult.js";
+import { api } from "./api/index.js";
+
+export default class App {
   $target = null;
   data = [];
 
