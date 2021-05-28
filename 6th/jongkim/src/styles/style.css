@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+	background-image: url('https://img.huffingtonpost.com/asset/5ec601832500000f1eeb1d4f.jpeg?cache=WuaLzjSHpx&ops=1778_1000'); /* jongkim 추가 */
 }
 
 body * {
@@ -42,6 +43,11 @@ body * {
   width: 100%;
   font-size: 40px;
   padding: 10px 15px;
+}
+
+.RandomButton {
+	width: 100px;
+	height: 50px;
 }
 
 .ImageInfo {
