@@ -3,10 +3,19 @@ const API_ENDPOINT =
 
 const api = {
   fetchCats: (keyword) => {
-    return fetch(`${API_ENDPOINT}/api/cats/search?q=${keyword}`).then((res) =>
-      res.json()
-    );
+    return fetch(`${API_ENDPOINT}/api/cats/search?q=${keyword}`)
+    .then((res) =>
+      res.json())
+    .catch(err =>
+      console.log(err));
   },
+  fetchCatone: (cat_id) => {
+    return fetch(`${API_ENDPOINT}/api/cats/${cat_id}`)
+    .then((res) =>
+      res.body)
+    .catch(err =>
+      console.log(err));
+  }
 };
 
 export { api };

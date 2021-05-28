@@ -17,8 +17,7 @@ export default class SearchResult {
   setState(nextData) {
     this.data = nextData;
     this.render();
-  }
-
+  };
   render() {
     this.$searchResult.innerHTML = this.data
       .map(
