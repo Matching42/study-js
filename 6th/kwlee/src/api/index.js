@@ -2,20 +2,29 @@ const API_ENDPOINT =
   "https://oivhcpn8r9.execute-api.ap-northeast-2.amazonaws.com/dev";
 
 const api = {
-  fetchCats: (keyword) => {
-    return fetch(`${API_ENDPOINT}/api/cats/search?q=${keyword}`)
+  fetchCats: async (keyword) => {
+    return await fetch(`${API_ENDPOINT}/api/cats/search?q=${keyword}`)
     .then((res) =>
       res.json())
     .catch(err =>
       console.log(err));
   },
-  fetchCatone: (cat_id) => {
-    return fetch(`${API_ENDPOINT}/api/cats/${cat_id}`)
-    .then((res) =>
-      res.body)
-    .catch(err =>
-      console.log(err));
-  }
+  fetchCatone: async (id) => {
+
+    try {
+
+    const result = await fetch(`${API_ENDPOINT}/api/cats/${id}`);
+
+    console.log(result);
+
+    return result.json();
+
+    } catch (e) {
+
+    console.warn(e);
+
+    }
+    },
 };
 
 export { api };

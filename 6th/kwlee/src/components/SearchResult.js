@@ -1,3 +1,6 @@
+import { api } from "../api/index.js";
+
+
 export default class SearchResult {
   $searchResult = null;
   data = null;
@@ -31,7 +34,7 @@ export default class SearchResult {
 
     this.$searchResult.querySelectorAll(".item").forEach(($item, index) => {
       $item.addEventListener("click", () => {
-        this.onClick(this.data[index]);
+        api.fetchCatone(this.data[index].id).then(({ data }) => this.onClick(data));
       });
     });
   }

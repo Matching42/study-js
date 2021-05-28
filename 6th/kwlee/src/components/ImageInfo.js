@@ -22,19 +22,7 @@ export default class ImageInfo {
 
   render() {
     if (this.data.visible) {
-      const CatId = this.data.image.id
-      console.log(CatId)
       const { name, url, temperament, origin } = this.data.image;
-      const A = api.fetchCatone(CatId)
-          .then(( data ) => {
-            return data}
-            )
-            .then((dat) => {
-              return data
-            })
-          .catch((err) => console.log("err \n",err));
-      // console.log(typeof api_id.fetchCatone)
-      console.log("A\n",A)
       this.$imageInfo.innerHTML = `
           <div class="content-wrapper">
             <div class="title">
