@@ -83,3 +83,9 @@ body * {
     color: white;
   }
 }
+
+.DarkMode {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
