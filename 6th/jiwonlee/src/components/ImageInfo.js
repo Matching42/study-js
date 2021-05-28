@@ -26,7 +26,7 @@ export default class ImageInfo {
           <div class="content-wrapper">
             <div class="title">
               <span>${name}</span>
-              <div class="close">x</div>
+              <button class="close">x</button>
             </div>
             <img src="${url}" alt="${name}"/>        
             <div class="description">
@@ -35,6 +35,11 @@ export default class ImageInfo {
             </div>
           </div>`;
       this.$imageInfo.style.display = "block";
+
+      const $closeBtn = document.querySelector(".close");
+      $closeBtn.addEventListener("click", () => {
+        this.$imageInfo.style.display = "none";
+      });
     } else {
       this.$imageInfo.style.display = "none";
     }

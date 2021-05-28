@@ -1,6 +1,7 @@
 import ImageInfo from "./components/ImageInfo.js";
 import SearchInput from "./components/SearchInput.js";
 import SearchResult from "./components/SearchResult.js";
+import DarkMode from "./components/DarkMode.js";
 import { api } from "./api/index.js";
 
 export default class App {
@@ -34,6 +35,16 @@ export default class App {
         visible: false,
         image: null,
       },
+    });
+
+    this.darkMode = new DarkMode({
+      $target,
+      onClick: (e) => {
+        if (e.target.checked)
+          document.documentElement.style.colorScheme = 'dark';
+        else
+          document.documentElement.style.colorScheme = 'light';
+      }
     });
   }
 
