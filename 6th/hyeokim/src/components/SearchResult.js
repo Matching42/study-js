@@ -31,6 +31,10 @@ export default class SearchResult {
       .join("");
 
     this.$searchResult.querySelectorAll(".item").forEach(($item, index) => {
+      $item.style.cursor = "pointer";
+    })
+
+    this.$searchResult.querySelectorAll(".item").forEach(($item, index) => {
       $item.addEventListener("click", () => {
         this.onClick(this.data[index]);
       });

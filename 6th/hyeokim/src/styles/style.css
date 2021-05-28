@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  background-color: #f8eded;
 }
 
 body * {
@@ -28,6 +29,7 @@ body * {
 .SearchResult img {
   width: 100%;
   height: 100%;
+  border-radius: 8px;
   object-fit: cover;
 }
 
@@ -39,9 +41,12 @@ body * {
 }
 
 .SearchInput {
-  width: 100%;
+  width: 80vw;
   font-size: 40px;
   padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #edffec;
+  border-color: #edffec;
 }
 
 .ImageInfo {
@@ -69,12 +74,16 @@ body * {
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  border: 1px solid #eee;
+  border: 3px solid #f29191;
   border-radius: 5px;
 }
 
 .ImageInfo .content-wrapper img {
   width: 100%;
+}
+
+.clickedItem {
+  border: 10px solid #f29191;
 }
 
 /* dark mode 처리
