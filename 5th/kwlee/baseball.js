@@ -1,10 +1,18 @@
-var num = [7,4,2]
+
+// 랜덤 숫자 배열 생성
+var random_array = []
+for (var i = 0; i<3; i++){
+	random_array.push(Math.floor(Math.random() * 10));
+}
+
 function numberBaseball(num) {
 	//여기에 작성하세요
+	var num = [7,4,2];
+
 
 	function game(list) {
 		var strike = 0;
-		var ball = 0
+		var ball = 0;
 		var res = "";
 
 		for (var i=0; i<3; i++){
@@ -12,7 +20,7 @@ function numberBaseball(num) {
 				strike++;
 			}
 			else if (num.includes(list[i])){
-					ball++;
+				ball++;
 			}
 		}
 		if (strike === 0 && ball ===0){
@@ -31,7 +39,7 @@ function numberBaseball(num) {
 
   var baseballGame = numberBaseball(num);
 
-
+console.log(random_array)
   // ex : 생성된 랜덤 숫자는 7 4 2
   console.log(baseballGame([8,3,1])); // OUT
   console.log(baseballGame([3,2,1])); // 0S 1B
