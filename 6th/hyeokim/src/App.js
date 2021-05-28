@@ -1,7 +1,7 @@
 import ImageInfo from "./components/ImageInfo.js";
 import SearchInput from "./components/SearchInput.js";
 import SearchResult from "./components/SearchResult.js";
-import { api } from "./api/index.js";
+import { default as api } from "./api/index.js";
 
 export default class App {
   $target = null;
@@ -13,7 +13,7 @@ export default class App {
     this.searchInput = new SearchInput({
       $target,
       onSearch: (keyword) => {
-        api.fetchCats(keyword).then(({ data }) => this.setState(data));
+        api(keyword).then(({ data }) => this.setState(data));
       },
     });
 

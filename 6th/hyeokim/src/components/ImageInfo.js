@@ -21,20 +21,27 @@ export default class ImageInfo {
   render() {
     if (this.data.visible) {
       const { name, url, temperament, origin } = this.data.image;
-
       this.$imageInfo.innerHTML = `
           <div class="content-wrapper">
             <div class="title">
               <span>${name}</span>
               <div class="close">x</div>
             </div>
-            <img src="${url}" alt="${name}"/>        
+            <img src="${url}" alt="${name}"/>
             <div class="description">
               <div>성격: ${temperament}</div>
               <div>태생: ${origin}</div>
             </div>
           </div>`;
       this.$imageInfo.style.display = "block";
+      this.$imageInfo.classList.toggle("clickedItem");
+
+      const closeBtn = document.querySelector(".close");
+      closeBtn.style.cursor = "pointer";
+      closeBtn.addEventListener("click", (e) => {
+        this.$imageInfo.style.display = "none";
+        this.$imageInfo.classList.toggle("clickedItem");
+      })
     } else {
       this.$imageInfo.style.display = "none";
     }
