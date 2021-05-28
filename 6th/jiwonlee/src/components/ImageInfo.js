@@ -34,14 +34,17 @@ export default class ImageInfo {
               <div>태생: ${origin}</div>
             </div>
           </div>`;
+      setTimeout(() => (this.$imageInfo.style.opacity = "1"), 300);
       this.$imageInfo.style.display = "block";
 
       const $closeBtn = document.querySelector(".close");
       $closeBtn.addEventListener("click", () => {
-        this.$imageInfo.style.display = "none";
+        this.$imageInfo.style.opacity = "0";
+        setTimeout(() => (this.$imageInfo.style.display = "none"), 300);
       });
     } else {
-      this.$imageInfo.style.display = "none";
+      this.$imageInfo.style.opacity = "0";
+      setTimeout(() => (this.$imageInfo.style.display = "none"), 300);
     }
   }
 }
