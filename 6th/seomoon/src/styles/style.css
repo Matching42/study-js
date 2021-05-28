@@ -77,11 +77,15 @@ body * {
   width: 100%;
 }
 
-/* dark mode 처리
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
     color: white;
   }
 }
-*?
+
+.DarkMode {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
