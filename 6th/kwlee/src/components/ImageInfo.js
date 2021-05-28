@@ -29,7 +29,7 @@ export default class ImageInfo {
           .then(( data ) => {
             return data}
             )
-            .then((data) => {
+            .then((dat) => {
               return data
             })
           .catch((err) => console.log("err \n",err));
