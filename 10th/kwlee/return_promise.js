@@ -27,14 +27,6 @@ _promise.then((data) => {
     console.log(data)
 }).catch((error) => {
     console.log("error = "+error.message)
-})
-_promise.then((data) => {
-    console.log(data)
-}).catch((error) => {
-    console.log("error = "+error.message)
-})
-_promise.then((data) => {
-    console.log(data)
-}).catch((error) => {
-    console.log("error = "+error.message)
+}).finally(() => {
+    console.log("settled - 결론이 난 상태입니다.")
 })
