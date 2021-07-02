@@ -1,5 +1,5 @@
 //Promise를 반환하는 함수 선언
-let kwleePromise = function (param = 0) {
+let _promise = function (param = 0) {
 
 	return new Promise(function (resolve, reject) {
 
@@ -25,17 +25,12 @@ let kwleePromise = function (param = 0) {
 	});
 };
 
-console.log(Object.keys(kwleePromise))
 
-// 실행부
-const array = [true, 0, false]
-for (let i = 0; i<3; i++){
-    kwleePromise(array[i])
-    .then(function (text) {
-        // 성공시
-        console.log(text+'\n');
-    }, function (error) {
-        // 실패시 
-        console.error(error);
-    });
-}
+_promise(true)
+	.then(JSON.parse)
+	.catch(function () { 
+		console.log('체이닝 중간에 에러가!!');
+	})
+	.then(function (text) {
+		console.log(text);
+	});
